@@ -1,2 +1,198 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module classpath="CMake" type="CPP_MODULE" version="4" />
+#include <iostream>
+using namespace std;
+int main() {
+    //problem 1.a
+    //     int i=0,sum;
+    //         for (int i = 1; i <=100 ; i++) {
+    //             sum += i;
+    //     }
+    // cout<<"sum = "<<sum<<endl;
+
+    //problem 1.b
+    //     int sum=0,i=0,n=1;
+    //     cin>>n;
+    //         while (i <= n) {
+    //             sum +=i;
+    //             i++;
+    //     }
+    // cout<<"sum = "<<sum<<endl;
+
+    //problem 2.a
+    // int num=0,count=0;
+    // for (int num = 2; count < 10; num++) {
+    //     bool isPrime = true;
+    //     for (int i = 2; i * i <= num; i++) {
+    //         if (num % i == 0) {
+    //             isPrime = false;
+    //             break;
+    //         }
+    //     }
+    //     if (isPrime) {
+    //         cout << num << " ";
+    //         count++;
+    //     }
+    // }
+
+    //problem 2.b
+    // int n;
+    // cout << "Enter the number of prime numbers to display: ";
+    // cin >> n;
+    // int count = 0, num = 2;
+    // while (count < n) {
+    //     bool isPrime = true;
+    //     int i = 2;
+    //     while (i * i <= num && isPrime) {
+    //         if (num % i == 0) {
+    //             isPrime = false;
+    //         }
+    //         i++;
+    //     }
+    //     if (isPrime) {
+    //         cout << num << " ";
+    //         count++;
+    //     }
+    //     num++;
+    // }
+
+    //problem 3
+    //     int n;
+    //     cout << "Enter a number: ";
+    //     cin >> n;
+    //     while (n != 1) {
+    //         cout << n << ", ";
+    //         n = (n % 2 == 0) ? n / 2 : 3 * n + 1;
+    //     }
+    //     cout << "1" << endl;
+    // }
+
+    //problem 4
+    //     int count = 0,n;
+    //     cin>>n;
+    //     while (n > 0) {
+    //         count++;
+    //         n /= 10;
+    //     }
+    //     cout << count << endl;
+    // }
+
+    //problem 5
+    //     int n;
+    //     cin >> n;
+    //     while (n > 0) {
+    //         cout << n % 10 << " ";
+    //         n /= 10;
+    //     }
+    //     cout << endl;
+    // }
+
+    //problem 6
+    //     int a=0,b=0;
+    //     cin>>a>>b;
+    //     while (b != 0) {
+    //         int temp = b;
+    //         b = a % b;
+    //         a = temp;
+    //     }
+    //     cout << a << endl;
+    // }
+
+    //problem 7
+    //     int sum = 0, count = 0, num;
+    //     while (sum <= 100) {
+    //         cout << "Enter a number: ";
+    //         cin >> num;
+    //         sum += num;
+    //         count++;
+    //     }
+    //     cout << "Sum exceeded 100! Total sum: " << sum << " Total numbers entered: " << count << endl;
+    // }
+
+    //problem 8
+    //     int balance = 500,amount;
+    //     while (balance > 0) {
+    //         cout << "Your balance: $" << balance<<endl;
+    //         cout<<"Enter withdrawal amount (or 0 to cancel): "<<endl;
+    //         cin >>amount;
+    //         if (amount==0) break;
+    //         if (amount>balance) {
+    //             cout << "Insufficient funds!";
+    //         } else {
+    //             balance -=amount;
+    //         }
+    //     }
+    //     cout << "Remaining balance: $" << balance << endl;
+    // }
+
+    //problem 9
+//     char ch;
+//     do {
+//         cout << "Enter 'Y' or 'N': ";
+//         cin >> ch;
+//         if (ch != 'Y' && ch != 'N') cout << "Invalid\n";
+//     } while (ch != 'Y' && ch != 'N');
+//     cout << "Accepted" << endl;
+// }
+
+    //problem 10
+//     int choice;
+//     do {
+//         cout << "1: Withdraw\n2: Deposit\n3: Balance\n4: Exit\n";
+//         cout << "Enter your choice: ";
+//         cin >> choice;
+//         if (choice == 4) cout << "Goodbye!\n";
+//         else cout << "Processing...\n";
+//     } while (choice != 4);
+// }
+//problem 11
+//     int choice,a,b;
+//     do {
+//         cout << "1: Add\n2: Subtract\n3: Multiply\n4: Exit\nEnter choice: ";
+//         cin >> choice;
+//         if (choice == 4) cout << "Goodbye!\n";
+//         else {
+//             cout << "Enter two numbers: ";
+//             cin >> a >> b;
+//             if (choice == 1) cout << "Result: " << a + b << endl;
+//             else if (choice == 2) cout << "Result: " << a - b << endl;
+//             else if (choice == 3) cout << "Result: " << a * b << endl;
+//         }
+//     } while (choice != 4);
+// }
+
+    //problem 12
+//     string correctPassword = "6543", input;
+//     int attempts = 0;
+//     while (attempts < 3) {
+//         cout << "Enter password: ";
+//         cin >> input;
+//         if (input == correctPassword) {
+//             cout << "Access Granted\n";
+//             break;
+//         } else {
+//             cout << "Incorrect\n";
+//         }
+//         attempts++;
+//     }
+//     if (attempts == 3) {
+//         cout << "Access Denied\n";
+//     }
+// }
+
+    //problem 13
+        int n=37, guess;
+    cout << "Guess the number (between 1 and 100): " << endl;
+    while (true) {
+            cout << "Input: ";
+            cin >> guess;
+        if (guess<n) {
+                cout << "Output: Too low" << endl;
+            } else if (guess>n) {
+                cout << "Output: Too high" << endl;
+            } else {
+                cout << "Output: Correct!" << endl;
+                break;
+            }
+        }
+
+        return 0;
+    }
